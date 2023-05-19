@@ -1,0 +1,96 @@
+.aapdocolor{
+    background-color: #08BD80 !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 999;
+    margin-top: 1.5rem;
+
+}
+
+.create-poll-link-navbar{
+    color: #08BD80;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none; 
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.create-poll-link-navbar:hover{
+    color: #1f8261;
+}
+
+.logo{
+    width: 210px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    navbar{
+        padding: 0 20px;
+    }
+
+    #enter-site-section{
+        display: flex;
+        
+    }
+
+    #create-poll-id{
+        display: none;
+    }
+}
+
+#cursors{
+    border: 1px solid #08BD80;
+    margin-left: 2px;
+}
+
+#variary{
+    color: #08BD80;
+}
+
+.centermelao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.fontlarge{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #3C4852;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.btnlargekaro{
+    background-color: #08BD80;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+#getstarted{
+    margin-top: 30px;
+    background-color: #3c485210;
+    padding: 75px 0;
+}

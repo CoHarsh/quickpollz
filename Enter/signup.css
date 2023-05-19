@@ -1,0 +1,29 @@
+
+
+.centerlao-1{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 70px;
+}
+
+.horirow{
+    display: flex;
+    width: 32%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.formcontrol-box-1:first-child{
+    margin-right: 8px;
+}
+
+.formcontrol-box-1:last-child{
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 768px){
+    .horirow{
+        width: 100%;
+    }
+}

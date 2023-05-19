@@ -1,0 +1,54 @@
+.centerlao{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 70px;
+}
+body{
+    overflow: hidden;
+}
+.form-control:focus {
+    border: 1px solid #ced4da;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(55, 55, 55, 0.205);
+}
+
+.formcontrol-box{
+   background: none!important;
+   width: 32%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px){
+    .centerlao{
+        align-items: normal;
+    }
+    .formcontrol-box{
+        width: 100%;
+    }
+}
+
+.login-title{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-bottom: 30px;
+}
+
+.btn{
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.5rem 1.3rem;
+}
+.login-logo{
+    width: 3rem;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.extra-matter{
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
