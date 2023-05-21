@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createone</title>    
+    <link rel="stylesheet" href="./CreateSurvey/createone.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class=" main-create-container">
+        <navbar>
+            <div>
+                <img src="./assets/quickpollz_logo_1.png " class="logo" id="quickpolllogo">
+            </div>
+            <div id="enter-site-section">
+                <a type="button" href="./signin.html" class="btn btn-lg">Sign In</a>
+                <a type="button" href="./signup.html" class="btn btn-success aapdocolor btn-lg">Sign Up</a>
+            </div>
+        </navbar>
+
+        <hr/>
+        <div class="text-center mt-3">
+            <h3 style="color:rgba(0, 0, 0, 0.686);font-size: 2rem; font-weight: 600;" class="btn" id="createpollhead">Create Poll</h3>
+        </div>
+       <form id="createform">
+            <p style="color: rgba(0, 0, 0, 0.50);">*Auto save enabled!</p>
+            <div class="mt-3 mb-3">
+                <!-- error message -->
+                <p id="errormessage" style="color: rgba(255, 0, 0, 1);"></p>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control no-border" id="surveytitle" placeholder="title" value="">
+                <label for="surveytitle">Poll Title</label>
+            </div>
+            
+            <!-- <hr style="    : 70vw;position: relative;left: -30%;"/> -->
+
+            <div class="mb-3 form-floating">
+                <input type="text" class="form-control no-border" id="surveyquestion" aria-describedby="surveyquestion" placeholder="question" value="">
+                <label for="surveyquestion" class="form-label" >Question</label>
+            </div>
+
+            <label for="surveyoptions" class="form-label" style="font-weight: 500;padding-left: 0.65rem;">Options : </label>
+            <div class="mb-3" id="surveyoptionscontainer">
+                <div style="display: flex;justify-content: space-between; align-items: center;">
+                <input type="text" class="form-control" id="surveyoptions0" aria-describedby="surveyoptions" value="">
+                <span class="material-icons" style="color: rgba(0, 0, 0, 0.5);cursor: pointer;margin-left: 10px;" id="crossicon0">clear</span>
+                </div>
+            </div>
+
+            <div class="mb-3 form-floating">
+                <button type="button" class="btn btn-primary aapdocolor" id="addbutton">Add</button>
+            </div>
+
+            <div class="mb-3 form-floating">
+                <input type="date" class="form-control no-border" id="deadline" aria-describedby="deadline" placeholder="0" value="">
+                <label for="deadline" class="form-label">End-time</label>
+            </div>
+            
+            <div class="mt-3 horizontal form-floating">
+                <div class="form-check">
+                    <input class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios2" value="private">
+                    <label class="form-check-label" for="exampleRadios2">
+                    Private
+                    </label>
+                    <p style="color: rgba(0, 0, 0, 0.5);font-size: 0.8rem;">You need to approve the contributer's request</p>
+                </div>
+                <div class="form-check"  style="margin-left: 30px;">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="public" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                    Public
+                    </label>
+                </div>
+            </div>
+
+            <label for="ispromoted" class="form-label mb-3 ">Want to promote?</label>
+            <div class="mb-3 horizontal form-floating">
+                <div class="form-check">
+                    <label class="form-check-label" for="promotedradios1">
+                        Yes
+                    </label>
+                    <input class="form-check-input" type="radio" name="promotedradios" id="promotedradios1" value="1" checked>
+                    <p style="color: rgba(0, 0, 0, 0.5);font-size: 0.8rem;">Site needs to approve the request if want to promote it.</p>
+                </div>
+                <div class="form-check" style="margin-left: 30px;">
+                    <label class="form-check-label" for="promotedradios2">
+                        No
+                    </label>
+                    <input class="form-check-input" type="radio" name="promotedradios" id="promotedradios2" value="0">
+                </div>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary aapdocolor" id="submitbutton">Create</button>
+                <button type="button" class="btn btn-primary aapdocolor" id="clearform">Clear</button>
+                <button type="button" class="btn btn-primary aapdocolor" id="raddkaro">Cancel</button>
+            </div>
+       </form>
+
+       
+    </div>
+    <footer>
+     <!-- made with ♥ by harsh github.com/CoHarsh -->
+     <div class="text-center mb-2" style="margin-top: 80px;padding-top:1rem;border-top: 0.05rem solid rgba(0, 0, 0, 0.158);">
+         <span class="text-center" style="color: #3c48526c">Made with <span style="color: black;">♥</span> by Harsh</span>
+         <img id="github-img" src="./assets/github.svg" style="height: 25px; margin-left: 30px;" >
+     </div>
+ </footer>
+</body>
+<script src="./CreateSurvey/createone.js"></script>
+<script src="./index.js"></script>
+</html>

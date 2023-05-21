@@ -36,7 +36,7 @@ function typeWriter() {
         setTimeout(typeWriter, speed);
     }
     else {
-        if (txt == 'Polls') {
+        if (txt == 'Polls.') {
             setTimeout(erase1, 1000);
         }
         else {
