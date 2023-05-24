@@ -40,9 +40,8 @@ loginForm.addEventListener('submit',async (e) => {
         errormessage.innerHTML += "Password is required<br>";
         return;
     }
-
-
     const data = await login(email, password);
+    // const data = await login(email, password);
     loginbutton.innerHTML = "Sign In";
     if (data.message) {
         localStorage.setItem("user", JSON.stringify(data.user));
@@ -52,7 +51,8 @@ loginForm.addEventListener('submit',async (e) => {
         if (role == "admin") {
           window.location.href = "../Admin/Admin.html";
         } else {
-          window.location.href = "../Feed/feed.html";
+          // window.location.href = "../Feed/feed.html";
+          window.location.href="../profile.html"
         }
       }
     else {

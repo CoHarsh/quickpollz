@@ -73,7 +73,7 @@ registerform.addEventListener('submit', async(e) => {
       console.log("Signup successful");
       localStorage.setItem("user", JSON.stringify(data.user));
       localStorage.setItem("token", JSON.stringify(data.token));
-      window.location.href = "../Feed/feed.html";
+      window.location.href = "../profile.html";
     } else {
       errormsg.innerHTML = data.message;
       return;
